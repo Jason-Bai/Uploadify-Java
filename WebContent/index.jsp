@@ -15,9 +15,6 @@
 		$(function() {
 			$('#file_upload').uploadify({
 				'swf'      : 'flash/uploadify.swf', // swf存放的路径
-				'formData': {
-					"session_name": "<%= request.getSession().getId() %>"
-				},
 				'uploader' : 'uploadify/upload'     // 处理上传的Servlet
 			});
 		});
